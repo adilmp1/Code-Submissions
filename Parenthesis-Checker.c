@@ -7,6 +7,7 @@ bool ispar(string x)
     stack<char> pars;   
     for (char ch : x)
     {
+        // cout<<pars.top();
         if (ch == '(' || ch == '{' || ch == '[')
         {
             pars.push(ch);
