@@ -63,7 +63,6 @@ vector<int> boundary(Node * root)
     leftBoundary(root,ans);
     leafNodes(root,ans);
     rightBoundary(root,right);
-    // cout<<flag1<<" "<<flag2<<"\n";
     for(int i=right.size()-1;i>0;i--)
     {
         ans.push_back(right[i]);
