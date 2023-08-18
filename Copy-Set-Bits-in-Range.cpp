@@ -1,9 +1,7 @@
 int setSetBit(int x, int y, int l, int r)
 {
-    int res = 0;
+    int res = 0, i = 1, dig;
     string s;
-    int i = 1;
-    int dig;
     while (y)
     {
         dig = y % 2;
@@ -15,19 +13,15 @@ int setSetBit(int x, int y, int l, int r)
         i++;
     }
     i = 1;
-    int ind = 0;
-    int flag = 1;
+    int ind = 0, flag = 1;
     while (ind != s.size() || x)
     {
         dig = x % 2;
         if (i >= l && i <= r && flag)
         {
-            if (!dig)
+            if (!dig && s[ind] == '1')
             {
-                if (s[ind] == '1')
-                {
-                    dig = 1;
-                }
+                dig = 1;
             }
             ind++;
         }
