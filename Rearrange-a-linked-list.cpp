@@ -1,4 +1,4 @@
-struct Node *rearrangeEvenOdd(struct Node *head)
+void rearrangeEvenOdd(struct Node *head)
 {
     struct Node *ptr = head;
     struct Node *tail = NULL;
@@ -32,5 +32,4 @@ struct Node *rearrangeEvenOdd(struct Node *head)
         i++;
     }
     temp->next = newStarting;
-    return head;
 }
