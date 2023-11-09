@@ -13,7 +13,7 @@ int columnWithMaxZeros(vector<vector<int>> a, int n)
                 count++;
             }
         }
-        if (count > maxz)
+        if (count > maxz and count!=0)
         {
             maxz = count;
             ans = i;
