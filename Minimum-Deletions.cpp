@@ -17,3 +17,18 @@
         }
         return n-dp[n][n];
     } 
+
+/*
+
+
+for eg; take adbia
+given string = adbia
+its reverse  = aibda
+
+the longest common subsequence is aba
+its length is 3.
+ans = string length - subsequence length = 5-3 = 2
+
+by removing two characters (d,i) the string will become palindrome
+
+*/
