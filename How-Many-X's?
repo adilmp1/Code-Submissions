@@ -1,0 +1,19 @@
+    int occur(int a,int b)
+    {
+        int count=0;
+        while(a)
+        {
+            int digit = a%10;
+            if(digit==b) count++;
+            a/=10;
+        }
+        return count;
+    }
+    int countX(int L, int R, int X) {
+        int count=0;
+        for(int i=L+1;i<R;i++)
+        {
+            count+=occur(i,X);
+        }
+        return count;
+    }
